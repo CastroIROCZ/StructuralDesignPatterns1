@@ -8,6 +8,6 @@ public class BitcoinPayment extends PaymentNotification {
 
     @Override
     public void notifyCustomer() {
-
+        channel.sendNotification("Your Bitcoin payment was successful.");
     }
 }
