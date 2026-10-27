@@ -37,5 +37,17 @@ public class BridgeDriver {
         System.out.println("Scenario 6: Bitcoin Payment with SMS");
         BitcoinPayment bitcoinSms = new BitcoinPayment(new SmsChannel());
         bitcoinSms.notifyCustomer();
+
+        System.out.println();
+
+        System.out.println("Scenario 7: Online Payment with Push");
+        OnlinePaymentNotification onlinePush = new OnlinePaymentNotification(new PushChannel());
+        onlinePush.notifyCustomer();
+
+        System.out.println();
+
+        System.out.println("Scenario 8: Bitcoin Payment with Push");
+        BitcoinPayment bitcoinPush = new BitcoinPayment(new PushChannel());
+        bitcoinPush.notifyCustomer();
     }
 }
