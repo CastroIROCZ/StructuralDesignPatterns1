@@ -15,6 +15,22 @@ public class LoyaltyStatus {
     }
 
     public double applyDiscount(double total) {
-        return 0.0;
+        double discount = 0.0;
+
+        switch (status) {
+            case REGULAR:
+                discount = 0.0;
+                break;
+
+            case SILVER:
+                discount = 0.05;
+                break;
+
+            case GOLD:
+                discount = 0.10;
+                break;
+        }
+
+        return total - (total * discount);
     }
 }

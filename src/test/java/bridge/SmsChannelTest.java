@@ -21,7 +21,7 @@ public void testSmsNotification() {
             sms.sendNotification("Payment successful");
 
             assertEquals(
-                "SMS notification sent: Payment successful",
+                "SMS sent: Payment successful",
                 output.toString().trim()
             );
         } finally {

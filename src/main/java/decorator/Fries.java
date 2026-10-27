@@ -4,11 +4,11 @@ public class Fries implements FoodItem {
 
     @Override
     public double getCost() {
-        return 0.0;
+        return 3.00;
     }
 
     @Override
     public String getDescription() {
-        return null;
+        return "Fries";
     }
 }

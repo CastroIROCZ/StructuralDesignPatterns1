@@ -10,10 +10,16 @@ public class Order {
     }
 
     public void addItem(FoodItem item) {
-
+        items.add(item);
     }
 
     public double getTotal() {
-        return 0.0;
+        double total = 0.0;
+
+        for (FoodItem item : items) {
+            total += item.getCost();
+        }
+
+        return total;
     }
 }

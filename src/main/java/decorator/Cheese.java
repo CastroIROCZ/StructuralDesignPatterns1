@@ -8,11 +8,11 @@ public class Cheese extends ToppingDecorator {
 
     @Override
     public double getCost() {
-        return 0.0;
+        return foodItem.getCost() + 1.00;
     }
 
     @Override
     public String getDescription() {
-        return null;
+        return foodItem.getDescription() + ", Cheese";
     }
 }

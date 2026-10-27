@@ -8,11 +8,11 @@ public class Ketchup extends ToppingDecorator {
 
     @Override
     public double getCost() {
-        return 0.0;
+        return foodItem.getCost() + 0.25;
     }
 
     @Override
     public String getDescription() {
-        return null;
+        return foodItem.getDescription() + ", Ketchup";
     }
 }
