@@ -18,7 +18,7 @@ public class OnlinePaymentNotificationTest {
 
             try {
                 System.setOut(new PrintStream(output));
-
+                
                 payment.notifyCustomer();
 
                 assertEquals(
